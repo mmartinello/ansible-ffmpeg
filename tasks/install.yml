@@ -1,0 +1,8 @@
+---
+- include_tasks: setup-Debian.yml
+  when: ansible_os_family | lower in apt_distros
+  tags: ['all', 'setup']
+  
+- include_tasks: setup-Centos.yml
+  when: ansible_os_family | lower in yum_distros
+  tags: ['all', 'setup']

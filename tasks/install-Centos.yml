@@ -1,0 +1,11 @@
+---
+- name: Activate EPEL repository
+  yum:
+    name: epel-release
+  tags: ['all', 'setup']
+  
+- name: Install FFmpeg
+  yum:
+    name: ffmpeg
+    state: present
+  tags: ['all', 'setup']

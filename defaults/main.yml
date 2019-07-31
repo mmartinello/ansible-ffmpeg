@@ -1,0 +1,11 @@
+---
+# APT Distributions (in lower case!)
+apt_distros:
+  - debian
+  - ubuntu
+
+# YUM Distributions (in lower case!)
+yum_distros:
+  - centos
+  - redhat
+  - red hat enterprise linux
